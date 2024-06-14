@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="started no_images vsc-initialized" cz-shortcut-listen="true">
+    <div class="wrapper">
+      <section class="quiz">
+        <center>
+          <div class="progress zero">
+            <div class="half"><a class="step first active" href="#" id="step1"><span>Step</span> 1</a> <a class="step disabled" href="#" id="step2"><span>Step</span> 2</a> <a class="step disabled" href="#" id="step3"><span>Step</span> 3</a>
+              <a class="step disabled" href="#" id="step4"><span>Step</span> 4</a>
+            </div>
+            <div class="half last">
+              <a class="step disabled last" href="#" id="step10"><span class="text">Final</span> <span class="number">5</span></a>
+            </div>
+          </div>
+        </center>
+          <div class="questions started male">
+            <div class="steps doImage no_points active" id="step1">
+              <p class="custom-width">Answer the questions below to find out if you are eligible to receive the app!</p>
+              <h3>What is your gender?</h3>
+              <div class="two_by_two">
+                <div class="box three first even" data-sex="male-bg"><input id="sex" name="sex" type="radio" value="male"> <label>Man</label>
+                </div>
+                <div class="box three first even" data-sex="female-bg"><input id="sex" name="sex" type="radio" value="female">
+                  <label>Woman</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage no_points" id="step2">
+              <h3>What is your age?</h3>
+              <div class="three_by_three">
+                <div class="box three first even"><input id="age" name="age" type="radio" value="20"> <label>18 - 24</label>
+                </div>
+                <div class="box three odd"><input id="age" name="age" type="radio" value="30">
+                  <label>25 - 34</label>
+                </div>
+                <div class="box three even"><input id="age" name="age" type="radio" value="40">
+                  <label>35 - 39</label>
+                </div>
+                <div class="box three first odd"><input id="age" name="age" type="radio" value="50">
+                  <label>40 - 44</label>
+                </div>
+                <div class="box three even"><input id="age" name="age" type="radio" value="60">
+                  <label>45 - 49</label>
+                </div>
+                <div class="box three odd"><input id="age" name="age" type="radio" value="70">
+                  <label>50 - 60+</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step3">
+              <h3>What is your average monthly income?</h3>
+              <div class="two_by_two">
+                <div class="box two first"><input id="body_type" name="body_type" type="radio" value="1">
+                  <label>$500,00 Week</label>
+                </div>
+                <div class="box two"><input id="body_type" name="body_type" type="radio" value="2"> <label>$1,000 Week</label>
+                </div>
+                <div class="box two first"><input id="body_type" name="body_type" type="radio" value="3">
+                  <label>$1,500 Week</label>
+                </div>
+                <div class="box two"><input id="body_type" name="body_type" type="radio" value="4">
+                  <label>$2,000 per week or more</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step4">
+              <h3 class="custom_width">Would you like to be paid to listen to music?</h3>
+              <div class="two_by_two">
+                <div class="box two first"><input id="workout_time" name="workout_time" type="radio" value="1">
+                  <label>Yes</label>
+                </div>
+                <div class="box two"><input id="workout_time" name="workout_time" type="radio" value="2">
+                  <label>No</label>
+                </div>
+              </div>
+            </div>
+            <div class="steps doImage points" id="step10">
+              <h3>This application has a limit on the number of people who can use it at the same time. Do you intend to watch the tutorial video until the end?</h3>
+              <div class="two_by_two" onclick="redirect()">
+                <div class="box two first"><input type="radio" value="1"> <label>Yes</label></div>
+                <div class="box two"><input type="radio" value="2"> <label>No</label></div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <footer class="zero">
+      <a href="#">© Copyright 2022</a>
+    </footer>
+    <script type="text/javascript">
+        function redirect() {
+            location.href = "https://www.spotmoneyapp.com/video34" // SEU LINK AQUI
+        }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.countdownTimer.min.js"></script>
+    <script src="js/new-custom.js"></script>
+  </body>
+</html>
