@@ -1,21 +1,16 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Captura os parâmetros da URL atual
             const queryParams = window.location.search;
-        
-            // Função que adiciona UTMs a qualquer link ou botão com href
             function appendUTMsToLinks() {
                 document.querySelectorAll('a, button').forEach(element => {
-                    // Verifica se o botão/link possui um href válido
                     const href = element.getAttribute('href');
                     if (href && !href.startsWith('#')) {
-                        // Mantém o ? ou & corretamente
                         const separator = href.includes('?') ? '&' : '?';
                         element.setAttribute('href', href + separator + queryParams.slice(1));
                     }
-        
-                    // Para botões com eventos JS, adiciona redirecionamento com UTMs
                     element.addEventListener('click', function (event) {
                         if (element.tagName.toLowerCase() === 'button' && href) {
                             event.preventDefault();
@@ -24,20 +19,16 @@
                     });
                 });
             }
-        
-            // Aplica ao carregar
             appendUTMsToLinks();
         });
-        </script>               
-    
-   <link href="cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js" rel="preload" as="script">
+    </script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <title>TikTok</title>
     <link rel="icon" href="images/Logo%20TTK.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 
     <style>
         * {
@@ -55,7 +46,6 @@
             align-items: center;
         }
 
-        /* Cabeçalho */
         .header {
             width: 100%;
             background-color: #ff0150;
@@ -66,7 +56,6 @@
             font-size: 16px;
         }
 
-        /* Container Principal */
         #p1 {
             width: 100%;
             max-width: 400px;
@@ -80,8 +69,8 @@
         }
 
         #logo {
-            width: 130px; /* Aumenta o tamanho do logotipo */
-            margin-left: 5p;
+            width: 130px;
+            margin-left: 5px;
         }
 
         .boxSaldo {
@@ -108,7 +97,6 @@
             color: #333;
         }
 
-        /* Conteúdo do Vídeo */
         #produto1 {
             width: 100%;
             max-width: 400px;
@@ -131,7 +119,6 @@
             border-radius: 8px;
             margin-bottom: 20px;
             position: relative;
-            
         }
 
         iframe {
@@ -143,11 +130,11 @@
             border: none;
         }
 
-        /* Botão */
         .centralizar {
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-top: 20px; /* Espaço entre vídeo e botão */
         }
 
         button {
@@ -167,7 +154,6 @@
             background-color: #ff0150;
         }
 
-        /* Responsividade */
         @media (max-width: 480px) {
             #p1 {
                 flex-direction: row;
@@ -183,7 +169,7 @@
     </div>
 
     <div id="p1">
-        <img id="logo" src="images/tiktoklogo.svg" alt="Spotify Logo">
+        <img id="logo" src="images/tiktoklogo.svg" alt="TikTok Logo">
         <div class="boxSaldo">
             <span class="textoSaldo">SALDO</span>
             <span class="valorSaldo">R$ <span class="saldoAtualizado">559.51</span></span>
@@ -194,10 +180,16 @@
         <h4>DESBLOQUEIO DE SALDO</h4>
         <p>Veja como liberar seu saque</p><p>assistindo ao vídeo.</p>
 
-        <div id="video-container">
-            <video src="media/vsltiktok.mp4" controls="" width="350" autoplay="" poster="./images/capattk.png"></video>
+        <div id="vid_68424132505f308a65801f11" style="position: relative; width: 100%; padding: 178.33333333333334% 0 0;">
+            <img id="thumb_68424132505f308a65801f11" src="https://images.converteai.net/d7bc41e2-52a3-46f9-94c4-99506f2bdb0d/players/68424132505f308a65801f11/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail">
+            <div id="backdrop_68424132505f308a65801f11" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div>
         </div>
-
+        <script type="text/javascript" id="scr_68424132505f308a65801f11">
+            var s=document.createElement("script");
+            s.src="https://scripts.converteai.net/d7bc41e2-52a3-46f9-94c4-99506f2bdb0d/players/68424132505f308a65801f11/player.js";
+            s.async=!0;
+            document.head.appendChild(s);
+        </script>
 
         <div class="centralizar">
             <a href="https://go.perfectpay.com.br/PPU38CONB6P" style="width: 100%; text-decoration: none;">
@@ -205,6 +197,5 @@
             </a>
         </div>
     </div>
-
-
-</body></html>
+</body>
+</html>
